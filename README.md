@@ -8,23 +8,31 @@
 ## WAF防火墙URL关键词拦截名单（待补充，以下规则仅适用于node、vite、webpack开发的网站，请勿用于php、java网站）
 
 ``` txt
-wlwmanifest.xml
+/wlwmanifest.xml
 .DS_Store
 .env
 .jsp
 .svn
 .php
-wp-includes
-${price}
+/wp-includes/
 /e/data
 .bak
-/.git/config
+/git/config
 /v2ex
 /.git/
-wp-login.php
-tibet-1.jpg
+/wp-login.php
+/tibet-1.jpg
 /wp/
 /uos-
+```
+
+## WAF防火墙UA黑名单
+
+```txt
+python-requests
+Custom-AsyncHttpClient
+Python-urllib
+Go-http-client
 ```
 
 ## WAF防火墙恶意IP名单（待补充）
